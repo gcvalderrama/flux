@@ -100,6 +100,7 @@ We also offer a Gradio-based demo for an interactive experience. To run the Grad
 
 ```bash
 python demo_gr.py --name flux-schnell --device cuda
+server_name="0.0.0.0"
 ```
 
 Options:
@@ -192,3 +193,7 @@ $ python -m flux.api --prompt="A beautiful beach" save outputs/api
 # open the image directly
 $ python -m flux.api --prompt="A beautiful beach" image show
 ```
+## custom
+
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+python demo_gr.py --name flux-schnell --device cuda

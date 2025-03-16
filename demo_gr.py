@@ -214,4 +214,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     demo = create_demo(args.name, args.device, args.offload)
-    demo.launch(share=args.share)
+    demo.launch(share=args.share, server_name="0.0.0.0")
